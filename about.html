@@ -218,27 +218,34 @@
 })();
 </script>
 <!-- End Zappy Analytics -->
-    <meta property="og:title" content="הצוות שמחזיר לכם את השקט — מאור שיקום נזקי אש ומים">
-  <meta property="og:description" content="מאור שיקום נזקי אש ומים נוסדה מתוך שליחות אמיתית לעזור לבעלי נכסים בשעת משבר. הכירו את הניסיון, המקצועיות והמחויבות שמאחורי כל פרויקט שיקום שאנחנו מבצעים.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="he_IL">
+    </meta>
+  </meta>
   
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="הצוות שמחזיר לכם את השקט — מאור שיקום נזקי אש ומים">
-  <meta name="twitter:description" content="מאור שיקום נזקי אש ומים נוסדה מתוך שליחות אמיתית לעזור לבעלי נכסים בשעת משבר. הכירו את הניסיון, המקצועיות והמחויבות שמאחורי כל פרויקט שיקום שאנחנו מבצעים.">
+  </meta>
+  </meta>
+  </meta>
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta property="og:title" content="הצוות שמחזיר לכם את השקט — מאור שיקום נזקי אש ומים"></meta>
+  <meta property="og:description" content="מאור שיקום נזקי אש ומים נוסדה מתוך שליחות אמיתית לעזור לבעלי נכסים בשעת משבר. הכירו את הניסיון, המקצועיות והמחויבות שמאחורי כל פרויקט שיקום שאנחנו מבצעים."></meta>
+  <meta property="og:type" content="website"></meta>
+  <meta property="og:locale" content="he_IL"></meta>
+  
+  <meta name="twitter:card" content="summary_large_image"></meta>
+  <meta name="twitter:title" content="הצוות שמחזיר לכם את השקט — מאור שיקום נזקי אש ומים"></meta>
+  <meta name="twitter:description" content="מאור שיקום נזקי אש ומים נוסדה מתוך שליחות אמיתית לעזור לבעלי נכסים בשעת משבר. הכירו את הניסיון, המקצועיות והמחויבות שמאחורי כל פרויקט שיקום שאנחנו מבצעים."></meta>
+  </link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></link>
 
     <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png">
-    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"></link>
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"></link>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"></link>
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png"></link>
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-192x192.png"></link>
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon-512x512.png"></link>
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"></link>
     <!-- Cookie Consent -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.css"></link>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3/dist/cookieconsent.umd.js"></script>
     <!-- Mickidum Accessibility Toolbar -->
     <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>
@@ -258,8 +265,8 @@
       .sub-menu a:hover { background-color: #f5f5f5; }
       /* RTL (Hebrew/Arabic) dropdown positioning */
       [dir="rtl"] .nav-menu .sub-menu, [dir="rtl"] nav .sub-menu, [dir="rtl"] .navbar .sub-menu, html[lang="he"] .nav-menu .sub-menu, html[lang="he"] nav .sub-menu, html[lang="he"] .navbar .sub-menu, html[lang="ar"] .nav-menu .sub-menu, html[lang="ar"] nav .sub-menu, html[lang="ar"] .navbar .sub-menu { left: auto !important; right: 0 !important; }
-      /* Hide empty dropdown menus */
-      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))), .sub-menu:not(:has(li)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
+      /* Hide empty dropdown menus (exclude catalog sub-menus that use <a> children instead of <li>) */
+      .sub-menu:empty, .sub-menu:not(:has(li:not(.zappy-hidden-menu-item))):not(:has(> a)), .sub-menu:not(:has(li)):not(:has(> a)) { display: none !important; opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; }
       /* Desktop: show submenu on Menu Group hover */
       li:has(.menu-group-title):hover > .sub-menu { opacity: 1 !important; visibility: visible !important; transform: translateY(0) !important; pointer-events: auto !important; }
       /* Menu Group title styling */
@@ -268,7 +275,7 @@
       /* ========== MOBILE SUBMENU STYLES ========== */
       @media (max-width: 768px) {
         .nav-menu .sub-menu, nav .sub-menu, .navbar .sub-menu, #navMenu .sub-menu { position: static !important; transform: none !important; box-shadow: none !important; background: transparent !important; max-height: 0; overflow: hidden; opacity: 0; visibility: hidden; transition: max-height 0.3s ease, opacity 0.3s ease; padding: 0 !important; border-radius: 0 !important; }
-        .sub-menu.mobile-expanded { max-height: 500px !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
+        .sub-menu.mobile-expanded { max-height: 60vh !important; overflow-y: auto !important; opacity: 1 !important; visibility: visible !important; padding: 8px 0 8px 16px !important; }
         [dir="rtl"] .sub-menu.mobile-expanded, html[lang="he"] .sub-menu.mobile-expanded { padding: 8px 16px 8px 0 !important; }
         /* Disable hover behavior on mobile */
         .nav-menu li:hover > .sub-menu, nav li:hover > .sub-menu, .navbar li:hover > .sub-menu, #navMenu li:hover > .sub-menu { opacity: 0; visibility: hidden; pointer-events: none; }
@@ -325,16 +332,16 @@
 
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewbox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
+    <svg class="close-icon" width="24" height="24" viewbox="0 0 24 24" fill="none" style="display: none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
 
   <button class="phone-header-btn" data-phone="050-0000000" aria-label="Call">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+    <svg width="20" height="20" viewbox="0 0 24 24" fill="currentColor">
       <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
     </svg>
   </button>
@@ -342,9 +349,9 @@
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
       <a href="/" class="logo-link">
-        <img src="/assets/business-logo.webp" alt="מאור שיקום נזקי אש ומים" class="logo">
+        <img src="/assets/business-logo.webp" alt="מאור שיקום נזקי אש ומים" class="logo"></img>
       </a>
-    </div><ul class="nav-menu" id="navMenu"><li><a href="/services">שירותים</a></li><li><a href="/about">אודות</a></li></ul></div>
+    </div><ul class="nav-menu" id="navMenu"><li><a href="/" data-i18n="nav-home">בית</a></li><li><a href="/services">שירותים</a></li><li><a href="/about">אודות</a></li></ul></div>
 
     
 
@@ -389,12 +396,12 @@
     // Check if background is transparent or rgba with 0 alpha
     const isTransparent = bgColor === 'transparent' || 
                          bgColor === 'rgba(0, 0, 0, 0)' ||
-                         (bgColor.startsWith('rgba') && bgColor.includes(', 0)'));
+                         (bgColor.startsWith('rgba') &amp;amp;amp;&amp;amp;amp; bgColor.includes(', 0)'));
     
     if (isTransparent) {
       // Check for background-image or gradient
       const bgImage = computedStyle.backgroundImage;
-      if (bgImage && bgImage !== 'none') {
+      if (bgImage &amp;amp;amp;&amp;amp;amp; bgImage !== 'none') {
         console.log('[Navbar] Navbar has background image/gradient, using dark text');
         bgColor = 'rgb(240, 240, 240)'; // Assume light background
       } else {
@@ -407,7 +414,7 @@
     
     // Calculate luminance to determine if background is light or dark
     const rgb = bgColor.match(/\d+/g);
-    if (rgb && rgb.length >= 3) {
+    if (rgb &amp;amp;amp;&amp;amp;amp; rgb.length &amp;amp;gt;= 3) {
       const r = parseInt(rgb[0]);
       const g = parseInt(rgb[1]);
       const b = parseInt(rgb[2]);
@@ -543,7 +550,7 @@
       // ONLY apply inline positioning styles on mobile viewport
       // On desktop, the CSS handles hiding these buttons with display: none
       // Inline styles were breaking desktop layout by overriding CSS
-      const isMobileViewport = window.innerWidth <= 768;
+      const isMobileViewport = window.innerWidth &amp;amp;lt;= 768;
       
       if (mobileToggle) {
         // Icon sizing applies to all viewports for consistency
@@ -734,7 +741,7 @@
       phoneBtn.addEventListener('click', function() {
         // Get phone number from placeholder in page or use default
         const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
-        const phoneNumber = phoneLinks.length > 0 
+        const phoneNumber = phoneLinks.length &amp;amp;gt; 0 
           ? phoneLinks[0].getAttribute('href').replace('tel:', '')
           : '[business_phone]';
         
@@ -751,7 +758,7 @@
     const handleWhatsAppVisibility = function() {
       const whatsappBtn = document.querySelector('.whatsapp-float');
       if (whatsappBtn) {
-        const isDesktop = window.innerWidth >= 769;
+        const isDesktop = window.innerWidth &amp;amp;gt;= 769;
         if (isDesktop) {
           whatsappBtn.style.setProperty('display', 'none', 'important');
           whatsappBtn.style.setProperty('visibility', 'hidden', 'important');
@@ -791,7 +798,7 @@
         <span class="about-story-label-line"></span>
         <span class="about-story-label-text">הסיפור שלנו</span>
       </div>
-      <h1 class="about-story-heading">מחזירים את הבית<br>למה שהיה — ויותר</h1>
+      <h1 class="about-story-heading">מחזירים את הבית<br></br><br></br><br></br><br></br>למה שהיה — ויותר</h1>
       <div class="about-story-divider"></div>
       <p class="about-story-lead">מאור שיקום נזקי אש ומים נוסדה מתוך הבנה עמוקה שמאחורי כל נזק יש משפחה שחיה ברגעים קשים. שריפה, נזקי מים, עובש — אלו אינם רק נזקים פיזיים לנכס. הם פוגעים בתחושת הבית, בביטחון, ובשגרת החיים.</p>
       <p class="about-story-body">עם שנים של ניסיון בשיקום נזקי אש ומים, אנו מביאים מקצועיות אמיתית לכל פרויקט — משיפוץ דירה אחרי שריפה ועד שיקום נזקי מים מקיף. אנו עובדים בשיתוף פעולה עם חברות ביטוח, מהנדסים ובעלי נכסים, ומלווים כל לקוח בסבלנות, בשקיפות ובמסירות מלאה.</p>
@@ -799,7 +806,7 @@
       <div class="about-story-values">
         <div class="about-story-value-item">
           <div class="about-story-value-icon">
-            <svg data-element-type="icon" data-icon-type="svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg data-element-type="icon" data-icon-type="svg" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M11 2C11 2 4 6.5 4 12.5C4 16.09 7.13 19 11 19C14.87 19 18 16.09 18 12.5C18 6.5 11 2 11 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
               <path d="M8 13.5C8 13.5 9 16 11 16C13 16 14 13.5 14 13.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
             </svg>
@@ -811,7 +818,7 @@
         </div>
         <div class="about-story-value-item">
           <div class="about-story-value-icon">
-            <svg data-element-type="icon" data-icon-type="svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg data-element-type="icon" data-icon-type="svg" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <rect x="3" y="3" width="16" height="16" rx="1" stroke="currentColor" stroke-width="1.5"></rect>
               <path d="M7 11L10 14L15 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
@@ -823,7 +830,7 @@
         </div>
         <div class="about-story-value-item">
           <div class="about-story-value-icon">
-            <svg data-element-type="icon" data-icon-type="svg" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg data-element-type="icon" data-icon-type="svg" width="22" height="22" viewbox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <path d="M11 3L13.5 8.5L19.5 9.3L15 13.7L16.2 19.5L11 16.8L5.8 19.5L7 13.7L2.5 9.3L8.5 8.5L11 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>
             </svg>
           </div>
@@ -837,18 +844,18 @@
     <!-- Image Column (END = LEFT in RTL) -->
     <figure class="about-story-figure">
       <div class="about-story-image-wrapper">
-        <img data-placeholder="about-story-image-1" data-context="A tall portrait-style environmental photograph showing skilled craftsman hands applying fresh plaster or paint to a beautifully restored interior wall, warm natural light streaming through a window, partially renovated room with clean new surfaces contrasting with raw construction materials, conveying professional restoration craftsmanship, calm and hopeful atmosphere, warm stone and cream tones, restoration and renovation company, Israel" width="620" height="820" src="/assets/site-about-story-image-1.webp" alt="עבודת שיקום מקצועית — החזרת הבית לחיים" class="about-story-img">
+        <img data-placeholder="about-story-image-1" data-context="A tall portrait-style environmental photograph showing skilled craftsman hands applying fresh plaster or paint to a beautifully restored interior wall, warm natural light streaming through a window, partially renovated room with clean new surfaces contrasting with raw construction materials, conveying professional restoration craftsmanship, calm and hopeful atmosphere, warm stone and cream tones, restoration and renovation company, Israel" width="620" height="820" src="/assets/site-about-story-image-1.webp" alt="עבודת שיקום מקצועית — החזרת הבית לחיים" class="about-story-img"></img>
         <div class="about-story-image-overlay"></div>
       </div>
       <div class="about-story-badge">
         <span class="about-story-badge-number">15+</span>
-        <span class="about-story-badge-label">שנות ניסיון<br>בשיקום נכסים</span>
+        <span class="about-story-badge-label">שנות ניסיון<br></br><br></br><br></br><br></br>בשיקום נכסים</span>
       </div>
     </figure>
   </div>
   <!-- Bottom section divider -->
   <div class="about-story-divider-wrapper">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1440 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,60 L0,28 Q120,18 240,26 T480,22 Q600,28 720,20 T960,24 Q1080,30 1200,22 T1440,26 L1440,60 Z" fill="#102233"></path>
     </svg>
   </div>
@@ -901,7 +908,7 @@
     </div>
   </div>
   <div class="about-values-bottom-divider">
-    <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <svg data-no-icon-edit="true" aria-hidden="true" viewbox="0 0 1200 60" preserveaspectratio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,60 L0,30 Q150,18 300,28 T600,22 Q750,16 900,26 T1200,20 L1200,60 Z" fill="var(--bg-light)"></path>
     </svg>
   </div>
@@ -924,14 +931,14 @@
       <div class="about-expertise-col">
         <h3 class="about-expertise-col-title">
           <span class="about-expertise-col-icon">
-            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path><path d="M12 8v4l3 3"></path></svg>
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path><path d="M12 8v4l3 3"></path></svg>
           </span>
           שיקום נזקים — ידע ומקצועיות
         </h3>
         <ul class="about-expertise-list">
           <li class="about-expertise-item">
             <span class="about-expertise-item-icon">
-              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </span>
             <div class="about-expertise-item-content">
               <strong>הערכת נזק לאחר אירוע</strong>
@@ -940,7 +947,7 @@
           </li>
           <li class="about-expertise-item">
             <span class="about-expertise-item-icon">
-              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </span>
             <div class="about-expertise-item-content">
               <strong>טיפול בנזקי לחות ומים</strong>
@@ -949,7 +956,7 @@
           </li>
           <li class="about-expertise-item">
             <span class="about-expertise-item-icon">
-              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </span>
             <div class="about-expertise-item-content">
               <strong>הורדת עובש מהקירות</strong>
@@ -958,7 +965,7 @@
           </li>
           <li class="about-expertise-item">
             <span class="about-expertise-item-icon">
-              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </span>
             <div class="about-expertise-item-content">
               <strong>שיקום לאחר שריפה בדירה</strong>
@@ -972,14 +979,14 @@
       <div class="about-expertise-col">
         <h3 class="about-expertise-col-title">
           <span class="about-expertise-col-icon">
-            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
           </span>
           שיפוץ ועיצוב — גמר מקצועי
         </h3>
         <ul class="about-expertise-list">
           <li class="about-expertise-item">
             <span class="about-expertise-item-icon">
-              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </span>
             <div class="about-expertise-item-content">
               <strong>תיאום שיפוץ דירה מלא</strong>
@@ -988,7 +995,7 @@
           </li>
           <li class="about-expertise-item">
             <span class="about-expertise-item-icon">
-              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </span>
             <div class="about-expertise-item-content">
               <strong>חידוש משטחים ופנים</strong>
@@ -997,7 +1004,7 @@
           </li>
           <li class="about-expertise-item">
             <span class="about-expertise-item-icon">
-              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </span>
             <div class="about-expertise-item-content">
               <strong>גמר איכותי ועמיד</strong>
@@ -1006,7 +1013,7 @@
           </li>
           <li class="about-expertise-item">
             <span class="about-expertise-item-icon">
-              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <svg data-element-type="icon" data-icon-type="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </span>
             <div class="about-expertise-item-content">
               <strong>ליווי אישי לאורך כל התהליך</strong>
@@ -1021,7 +1028,7 @@
 
     <!-- Supporting Image -->
     <figure class="about-expertise-image-wrap">
-      <img data-placeholder="about-expertise-image-1" data-context="A wide panoramic shot of a professional restoration crew working inside a renovated apartment. The scene shows freshly plastered walls in warm stone tones, new flooring being laid, and workers in uniforms applying finishing touches. The atmosphere conveys skilled craftsmanship, cleanliness, and transformation from damage to renewal — suitable for a premium Israeli fire and water damage restoration company." width="1200" height="480" src="/assets/site-about-expertise-image-1.webp" alt="צוות מקצועי של מאור שיקום מבצע עבודות שיפוץ וגמר בדירה לאחר שיקום נזקי מים">
+      <img data-placeholder="about-expertise-image-1" data-context="A wide panoramic shot of a professional restoration crew working inside a renovated apartment. The scene shows freshly plastered walls in warm stone tones, new flooring being laid, and workers in uniforms applying finishing touches. The atmosphere conveys skilled craftsmanship, cleanliness, and transformation from damage to renewal — suitable for a premium Israeli fire and water damage restoration company." width="1200" height="480" src="/assets/site-about-expertise-image-1.webp" alt="צוות מקצועי של מאור שיקום מבצע עבודות שיפוץ וגמר בדירה לאחר שיקום נזקי מים"></img>
       <figcaption class="about-expertise-image-caption">מאור שיקום — מהנזק לחידוש, בכל שלב של הדרך</figcaption>
     </figure>
 
@@ -1033,7 +1040,7 @@
 
     <div class="about-reviews-header">
       <span class="about-reviews-eyebrow">מה הלקוחות שלנו אומרים</span>
-      <h2 class="about-reviews-title">שיקום נזקי מים ואש — <br>הסיפורים מאחורי העבודה</h2>
+      <h2 class="about-reviews-title">שיקום נזקי מים ואש — <br></br><br></br><br></br><br></br>הסיפורים מאחורי העבודה</h2>
       <div class="about-reviews-rule"></div>
     </div>
 
@@ -1108,7 +1115,7 @@
         <!-- Column 1: Company Info -->
         <div class="footer-col footer-col--brand">
           <div class="footer-logo-wrap">
-            <img src="/assets/business-logo.webp" alt="מאור שיקום נזקי אש ומים" class="logo">
+            <img src="/assets/business-logo.webp" alt="מאור שיקום נזקי אש ומים" class="logo"></img>
           </div>
           <p class="footer-tagline">שיקום מקצועי של נזקי אש ומים — מחזירים לכם את הבית.</p>
           <div class="footer-accent-line"></div>
